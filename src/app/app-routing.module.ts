@@ -24,6 +24,9 @@ const routes: Routes = [
   { path: 'ui/list', loadChildren: './page/ui/list/list.module#ListPageModule' },
   { path: 'ui/media', loadChildren: './page/ui/media/media.module#MediaPageModule' },
   { path: 'ui/menu', loadChildren: './page/ui/menu/menu.module#MenuPageModule' },
+  { path: 'ui/modal', loadChildren: './page/ui/modal/modal.module#ModalPageModule' },  { path: 'example', loadChildren: './page/ui/modal/example/example.module#ExamplePageModule' },
+
+
 
 
 
