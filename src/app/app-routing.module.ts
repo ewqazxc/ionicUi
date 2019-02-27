@@ -20,7 +20,7 @@ const routes: Routes = [
   { path: 'ui/infinte-scroll', loadChildren: './page/ui/infinte-scroll/infinte-scroll.module#InfinteScrollPageModule' },
   { path: 'ui/icons', loadChildren: './page/ui/icons/icons.module#IconsPageModule' },
   { path: 'ui/input', loadChildren: './page/ui/input/input.module#InputPageModule' },
-  { path: 'item', loadChildren: './page/ui/item/item.module#ItemPageModule' },
+  { path: 'ui/item', loadChildren: './page/ui/item/item.module#ItemPageModule' },
  
 ];
 @NgModule({
