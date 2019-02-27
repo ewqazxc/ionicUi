@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text='' defaultHref="/tabs/tab2"></ion-back-button>
+    </ion-buttons>
+    <ion-title>content</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding scrollion-content='false'>
+  <!-- <ion-content> -->
+  [scrollion-content　事件(Events)]="true" 
+  (ionScrollStart)="logScrollStart()"
+  (ionScroll)="logScrolling($event)" 
+  (ionScrollEnd)="logScrollEnd()">
+  <!-- </ion-content> -->
+</ion-content>

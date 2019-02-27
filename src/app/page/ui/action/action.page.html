@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text='' defaultHref='/tabs/tab2'></ion-back-button>
+    </ion-buttons>
+    <ion-title>底部弹出框 Action Sheet</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-button (click)="presentActionSheet()">
+    底部弹框 presentActionSheet
+  </ion-button>
+  <ion-list>
+    <ion-item>
+      <ion-label>onWill 1551168482069</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>onDis 1551168482570</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>dis 1551168482571</ion-label>
+    </ion-item>
+  </ion-list> 
+  <ion-button (click)="getTop()">
+      getTop
+  </ion-button>
+  
+</ion-content>

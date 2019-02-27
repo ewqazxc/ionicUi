@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text='' defaultHref="/tabs/tab2"></ion-back-button>
+    </ion-buttons>
+    <ion-title>上拉分页 Infinite Scroll</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <!-- <ion-infinite-scroll>
+        <ion-infinite-scroll-content
+          loadingSpinner="bubbles"
+          loadingText="Loading more data…">
+        </ion-infinite-scroll-content>
+    </ion-infinite-scroll> -->
+
+  <ion-button (click)="toggleInfiniteScroll()" expand="block">
+    Toggle Infinite Scroll
+  </ion-button>
+
+  <ion-list>222222</ion-list>
+
+  <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data...">
+      12354654561235465456123546545612354654561235465456
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

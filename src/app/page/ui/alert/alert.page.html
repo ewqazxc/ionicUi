@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text='' defaultHref="/tabs/tab2"></ion-back-button>
+    </ion-buttons> 
+    <ion-title>弹窗 Alert</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-button expand="block" (click)="presentAlert()">
+      基本弹框提示
+  </ion-button>
+  <ion-button expand="block" (click)="presentAlertMultipleButtons()">
+      多选弹框提示
+  </ion-button>
+  <ion-button expand="block" (click)="presentAlertConfirm()">
+      操作弹框提示
+  </ion-button>
+  <ion-button expand="block" (click)="presentAlertPrompt()">
+      可编辑弹框
+  </ion-button>
+  <ion-button expand="block" (click)="presentAlertRadio()">
+      单选列表弹框
+  </ion-button>
+  <ion-button expand="block" (click)="presentAlertCheckbox()">
+      多选列表弹框
+  </ion-button>
+  <ion-button expand="block" (click)="translucentAlert()">
+      半透明弹框translucent
+  </ion-button>
+  <ion-button expand="block" (click)="animatedAlert()">
+      animated false弹框
+  </ion-button>
+  <ion-button expand="block" (click)="backdropDismissAlert()">
+      backdropDismiss false
+  </ion-button>
+  
+</ion-content>

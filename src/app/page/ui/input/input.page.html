@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text='' defaultHref="/tabs/tab2"></ion-back-button>
+    </ion-buttons>
+    <ion-title>输入控件 Input</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-text color="primary">
+    <p>accept file</p>
+  </ion-text>
+  <ion-input accept='file'></ion-input>
+  <ion-text color="primary">
+    <p>普通</p>
+  </ion-text>
+  <ion-input></ion-input>
+  <ion-input value="custom"></ion-input>
+  <ion-input placeholder="Enter Input"></ion-input>
+  <ion-text color="primary">
+    <p>带删除</p>
+  </ion-text>
+  <ion-input clearInput value="clear me"></ion-input>
+  <ion-text color="primary">
+    <p>数字</p>
+  </ion-text>
+  <ion-input type="number" value="333"></ion-input>
+  <ion-text color="primary">
+    <p>禁用</p>
+  </ion-text>
+  <ion-input value="Disabled" disabled></ion-input>
+  <ion-text color="primary">
+    <p>只读</p>
+  </ion-text>
+  <ion-input value="Readonly" readonly></ion-input>
+
+
+  <ion-item>
+    <ion-label>普通标题</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">浮动标题</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="fixed">修补标题</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">固定标题</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+</ion-content>
