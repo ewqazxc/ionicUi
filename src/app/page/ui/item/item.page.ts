@@ -11,5 +11,13 @@ export class ItemPage implements OnInit {
 
   ngOnInit() {
   }
-
+  favorite=(item)=>{
+    console.log('favorite=',item)
+  }
+  share=(item)=>{
+    console.log('share=',item)
+  }
+  unread=(item)=>{
+    console.log('unread=',item)
+  }
 }

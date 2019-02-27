@@ -1,0 +1,97 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text='' defaultHref="/tabs/tab2"></ion-back-button>
+        </ion-buttons>
+        <ion-title>list</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <ion-item>
+            <ion-label>Pokémon Yellow</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-label>Mega Man X</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-label>The Legend of Zelda</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-label>Pac-Man</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-label>Super Mario World</ion-label>
+        </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+        <ion-item>
+            <ion-label>Input</ion-label>
+            <ion-input></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Toggle</ion-label>
+            <ion-toggle slot="end"></ion-toggle>
+        </ion-item>
+        <ion-item>
+            <ion-label>Radio</ion-label>
+            <ion-radio slot="end"></ion-radio>
+        </ion-item>
+        <ion-item>
+            <ion-label>Checkbox</ion-label>
+            <ion-checkbox slot="start"></ion-checkbox>
+        </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+        <ion-item-sliding>
+            <ion-item>
+                <ion-label>Item</ion-label>
+            </ion-item>
+            <ion-item-options side="end">
+                <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+            </ion-item-options>
+        </ion-item-sliding>
+
+        <ion-item-sliding>
+            <ion-item>
+                <ion-label>Item</ion-label>
+            </ion-item>
+            <ion-item-options side="end">
+                <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+            </ion-item-options>
+        </ion-item-sliding>
+    </ion-list>
+
+    <h3>ion-list-header</h3>
+    <ion-list>
+        <ion-list-header>
+            <ion-label>Items</ion-label>
+        </ion-list-header>
+        <ion-item>Item 1</ion-item>
+        <ion-item>Item 2</ion-item>
+        <ion-item>Item 3</ion-item>
+        <ion-item>Item 4</ion-item>
+        <ion-item>Item 5</ion-item>
+    </ion-list>
+
+    <h3>ion-virtual-scroll</h3>
+    <ion-virtual-scroll [items]="items" approxItemHeight="320px">
+        <ion-card *virtualItem="let item; let itemBounds = bounds;">
+            <div>
+                <img [src]="item.imgSrc" [height]="item.imgHeight" [alt]="item.name">
+            </div>
+            <ion-card-header>
+                <ion-card-title>{{ item.name }}</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>{{ item.content }}</ion-card-content>
+        </ion-card>
+    </ion-virtual-scroll>
+    <ion-virtual-scroll [items]="items" approxItemHeight="320px">
+        <ion-text *virtualItem="let item; let itemBounds = bounds;">{{ item.name }}</ion-text>
+    </ion-virtual-scroll>
+</ion-content>

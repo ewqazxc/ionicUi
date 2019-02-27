@@ -21,6 +21,12 @@ const routes: Routes = [
   { path: 'ui/icons', loadChildren: './page/ui/icons/icons.module#IconsPageModule' },
   { path: 'ui/input', loadChildren: './page/ui/input/input.module#InputPageModule' },
   { path: 'ui/item', loadChildren: './page/ui/item/item.module#ItemPageModule' },
+  { path: 'ui/list', loadChildren: './page/ui/list/list.module#ListPageModule' },
+  { path: 'ui/media', loadChildren: './page/ui/media/media.module#MediaPageModule' },
+  { path: 'ui/menu', loadChildren: './page/ui/menu/menu.module#MenuPageModule' },
+
+
+
  
 ];
 @NgModule({
