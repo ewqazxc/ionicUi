@@ -24,8 +24,19 @@ const routes: Routes = [
   { path: 'ui/list', loadChildren: './page/ui/list/list.module#ListPageModule' },
   { path: 'ui/media', loadChildren: './page/ui/media/media.module#MediaPageModule' },
   { path: 'ui/menu', loadChildren: './page/ui/menu/menu.module#MenuPageModule' },
-  { path: 'ui/modal', loadChildren: './page/ui/modal/modal.module#ModalPageModule' },  { path: 'example', loadChildren: './page/ui/modal/example/example.module#ExamplePageModule' },
-
+  { path: 'ui/modal', loadChildren: './page/ui/modal/modal.module#ModalPageModule' },
+  { path: 'example', loadChildren: './page/ui/modal/example/example.module#ExamplePageModule' },
+  { path: 'ui/navigation', loadChildren: './page/ui/navigation/navigation.module#NavigationPageModule'},
+  { path: 'popver', loadChildren: './page/ui/popver/popver.module#PopverPageModule' },
+  { path: 'ui/popover', loadChildren: './page/ui/popover/popover.module#PopoverPageModule' },
+  { path: 'ui/progress', loadChildren: './page/ui/progress/progress.module#ProgressPageModule' },
+  { path: 'ui/radio', loadChildren: './page/ui/radio/radio.module#RadioPageModule' },
+  { path: 'ui/range', loadChildren: './page/ui/range/range.module#RangePageModule' },
+  { path: 'ui/refresher', loadChildren: './page/ui/refresher/refresher.module#RefresherPageModule' },
+  { path: 'ui/reorder', loadChildren: './page/ui/reorder/reorder.module#ReorderPageModule' },
+  { path: 'ui/searchbar', loadChildren: './page/ui/searchbar/searchbar.module#SearchbarPageModule' },
+  { path: 'ui/segment', loadChildren: './page/ui/segment/segment.module#SegmentPageModule' },
+  { path: 'ui/select', loadChildren: './page/ui/select/select.module#SelectPageModule' },
 
 
 

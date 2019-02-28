@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text='' defaultHref="/tabs/tab2"></ion-back-button>
+    </ion-buttons>
+    <ion-title>搜索框 Searchbar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
+      <ion-card-title>Awesome Title</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+
+      <ion-text color="primary">
+        <h1>默认</h1>
+      </ion-text>
+      <ion-searchbar></ion-searchbar>
+
+
+      <ion-text color="primary">
+        <h1>color="danger"</h1>
+      </ion-text>
+      <ion-searchbar color="danger"></ion-searchbar>
+
+
+      <ion-text color="primary">
+        <h1>value="Ionic"</h1>
+      </ion-text>
+      <ion-searchbar value="Ionic"></ion-searchbar>
+
+
+      <ion-text color="primary">
+        <h1> type="tel"</h1>
+      </ion-text>
+      <ion-searchbar type="tel"></ion-searchbar>
+
+
+      <ion-text color="primary">
+        <h1>showCancelButton cancelButtonText="Custom Cancel"</h1>
+      </ion-text>
+      <ion-searchbar showCancelButton cancelButtonText="Custom Cancel"></ion-searchbar>
+
+
+      <ion-text color="primary">
+        <h1>debounce="500"</h1>
+      </ion-text>
+      <ion-searchbar debounce="500"></ion-searchbar>
+
+
+      <ion-text color="primary">
+        <h1>animated</h1>
+      </ion-text>
+      <ion-searchbar animated></ion-searchbar>
+
+
+      <ion-text color="primary">
+        <h1>placeholder="Filter Schedules"</h1>
+      </ion-text>
+      <ion-searchbar placeholder="Filter Schedules"></ion-searchbar>
+
+
+      <ion-text color="primary">
+        <h1>toolbar</h1>
+      </ion-text>
+      <ion-toolbar>
+        <ion-searchbar></ion-searchbar>
+      </ion-toolbar>
+
+      
+      <ion-text color="primary">
+          <h1>spellcheck</h1>
+        </ion-text>
+        <ion-toolbar>
+          <ion-searchbar spellcheck></ion-searchbar>
+        </ion-toolbar>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

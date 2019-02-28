@@ -1,0 +1,20 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text='' defaultHref="/tabs/tab2"></ion-back-button>
+        </ion-buttons>
+        <ion-title>弹出框 Popover</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-button (click)="presentPopover()">
+        presentPopover
+    </ion-button>
+    <ion-button (click)="presentQueryPopover()">
+        presentQueryPopover
+    </ion-button>
+    <ion-popover-controller>
+        ????
+    </ion-popover-controller>
+</ion-content>

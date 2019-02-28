@@ -1,0 +1,147 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text='' defaultHref="/tabs/tab2"></ion-back-button>
+    </ion-buttons>
+    <ion-title>进度指示 Progress Indicators</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>ion-loading</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button (click)="presentLoading()">
+        presentLoading
+      </ion-button>
+      <ion-button (click)="presentLoadingWithOptions()">
+        presentLoadingWithOptions
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>ion-loading-controller</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button (click)="ioCtrLoading()">
+        X ioCtrLoading
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>ion-progress-bar</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text color="primary">
+        <p>空</p>
+      </ion-text>
+      <ion-progress-bar></ion-progress-bar>
+      <ion-text color="primary">
+        <p>value 0.5</p>
+      </ion-text>
+      <ion-progress-bar value="0.5"></ion-progress-bar>
+
+      <ion-text color="primary">
+        <p>value 0.5</p>
+        <p>color="primary"</p>
+      </ion-text>
+      <ion-progress-bar color="primary" value="0.5"></ion-progress-bar>
+      <ion-text color="primary">
+        <p>color="secondary" value="0.5"</p>
+      </ion-text>
+      <ion-progress-bar color="secondary" value="0.5"></ion-progress-bar>
+      <ion-text color="primary">
+        <p>value="0.25" buffer="0.5"</p>
+      </ion-text>
+      <ion-progress-bar value="0.25" buffer="0.5"></ion-progress-bar>
+      <ion-text color="primary">
+        <p>type="indeterminate"</p>
+      </ion-text>
+      <ion-progress-bar type="indeterminate"></ion-progress-bar>
+      <ion-text color="primary">
+        <p>type="indeterminate" reversed="true"</p>
+      </ion-text>
+      <ion-progress-bar type="indeterminate" reversed="true"></ion-progress-bar>
+      <ion-text color="danger">
+        <p> value="0.25" buffer="0.5" type="indeterminate"</p>
+      </ion-text>
+      <ion-progress-bar value="0.25" buffer="0.5" type="indeterminate"></ion-progress-bar>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>ion-skeleton-text</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text color="primary">
+        <p> width="80%"</p>
+      </ion-text>
+      <ion-skeleton-text width="80%">666</ion-skeleton-text>
+      <ion-text color="danger">
+        <p> width="50%" color="danger"</p>
+      </ion-text>
+      <ion-skeleton-text width="50%" color="danger">666</ion-skeleton-text>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>ion-spinner</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text color="primary">
+        <p> none</p>
+      </ion-text>
+      <ion-spinner></ion-spinner>
+
+
+      <ion-text color="primary">
+        <p> name="lines" </p>
+      </ion-text>
+      <ion-spinner name="lines"></ion-spinner>
+
+
+      <ion-text color="primary">
+        <p> name="lines-small" </p>
+      </ion-text>
+      <ion-spinner name="lines-small"></ion-spinner>
+
+
+      <ion-text color="primary">
+        <p> name="dots" </p>
+      </ion-text>
+      <ion-spinner name="dots"></ion-spinner>
+
+
+      <ion-text color="primary">
+        <p> name="bubbles" </p>
+      </ion-text>
+      <ion-spinner name="bubbles"></ion-spinner>
+
+
+      <ion-text color="primary">
+        <p> name="circles" </p>
+      </ion-text>
+      <ion-spinner name="circles"></ion-spinner>
+
+
+      <ion-text color="primary">
+        <p> name="crescent" </p>
+      </ion-text>
+      <ion-spinner name="crescent"></ion-spinner>
+
+
+      <ion-text color="primary">
+        <p> name="paused" </p>
+      </ion-text>
+      <ion-spinner paused></ion-spinner>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
