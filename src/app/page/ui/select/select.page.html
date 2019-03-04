@@ -1,12 +1,126 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button text='' defaultHref="/tabs/tab2"></ion-back-button>
-    </ion-buttons>
-    <ion-title>选择框 Select</ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text='' defaultHref="/tabs/tab2"></ion-back-button>
+        </ion-buttons>
+        <ion-title>选择框 Select</ion-title>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Single Selection</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-list>
+                <ion-list-header>单选</ion-list-header>
+                <ion-item>
+                    <ion-label>性别</ion-label>
+                    <ion-select placeholder="Select One">
+                        <ion-select-option value="f">Female</ion-select-option>
+                        <ion-select-option value="m">Male</ion-select-option>
+                    </ion-select>
+                </ion-item>
 
+                <ion-item>
+                    <ion-label>发色</ion-label>
+                    <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+                        <ion-select-option value="brown">Brown</ion-select-option>
+                        <ion-select-option value="blonde">Blonde</ion-select-option>
+                        <ion-select-option value="black">Black</ion-select-option>
+                        <ion-select-option value="red">Red</ion-select-option>
+                    </ion-select>
+                </ion-item>
+
+            </ion-list>
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Multiple Selection</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-list>
+                <ion-list-header>多选</ion-list-header>
+
+                <ion-item>
+                    <ion-label>装饰</ion-label>
+                    <ion-select multiple="true" cancelText="取消" okText="确定">
+                        <ion-select-option value="bacon">Bacon</ion-select-option>
+                        <ion-select-option value="olives">Black Olives</ion-select-option>
+                        <ion-select-option value="xcheese">Extra Cheese</ion-select-option>
+                        <ion-select-option value="peppers">Green Peppers</ion-select-option>
+                        <ion-select-option value="mushrooms">Mushrooms</ion-select-option>
+                        <ion-select-option value="onions">Onions</ion-select-option>
+                        <ion-select-option value="pepperoni">Pepperoni</ion-select-option>
+                        <ion-select-option value="pineapple">Pineapple</ion-select-option>
+                        <ion-select-option value="sausage">Sausage</ion-select-option>
+                        <ion-select-option value="Spinach">Spinach</ion-select-option>
+                    </ion-select>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label>宠物</ion-label>
+                    <ion-select multiple="true">
+                        <ion-select-option value="bird" selected>鸟</ion-select-option>
+                        <ion-select-option value="cat">猫</ion-select-option>
+                        <ion-select-option value="dog" selected>狗</ion-select-option>
+                        <ion-select-option value="honeybadger">蜂蜜獾</ion-select-option>
+                    </ion-select>
+                </ion-item>
+            </ion-list>
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Interface Options </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-list>
+                <ion-list-header>展示类型</ion-list-header>
+
+                <ion-item>
+                    <ion-label>弹框</ion-label>
+                    <ion-select [interfaceOptions]="customAlertOptions" interface="alert" multiple="true"
+                        placeholder="Select One">
+                        <ion-select-option value="bacon">Bacon</ion-select-option>
+                        <ion-select-option value="olives">Black Olives</ion-select-option>
+                        <ion-select-option value="xcheese">Extra Cheese</ion-select-option>
+                        <ion-select-option value="peppers">Green Peppers</ion-select-option>
+                        <ion-select-option value="mushrooms">Mushrooms</ion-select-option>
+                        <ion-select-option value="onions">Onions</ion-select-option>
+                        <ion-select-option value="pepperoni">Pepperoni</ion-select-option>
+                        <ion-select-option value="pineapple">Pineapple</ion-select-option>
+                        <ion-select-option value="sausage">Sausage</ion-select-option>
+                        <ion-select-option value="Spinach">Spinach</ion-select-option>
+                    </ion-select>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label>气泡</ion-label>
+                    <ion-select [interfaceOptions]="customPopoverOptions" interface="popover" placeholder="Select One">
+                        <ion-select-option value="brown">Brown</ion-select-option>
+                        <ion-select-option value="blonde">Blonde</ion-select-option>
+                        <ion-select-option value="black">Black</ion-select-option>
+                        <ion-select-option value="red">Red</ion-select-option>
+                    </ion-select>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label>操作栏</ion-label>
+                    <ion-select [interfaceOptions]="customActionSheetOptions" interface="action-sheet"
+                        placeholder="Select One">
+                        <ion-select-option value="red">Red</ion-select-option>
+                        <ion-select-option value="purple">Purple</ion-select-option>
+                        <ion-select-option value="yellow">Yellow</ion-select-option>
+                        <ion-select-option value="orange">Orange</ion-select-option>
+                        <ion-select-option value="green">Green</ion-select-option>
+                    </ion-select>
+                </ion-item> 
+            </ion-list>
+        </ion-card-content>
+    </ion-card>
 </ion-content>
