@@ -37,6 +37,10 @@ const routes: Routes = [
   { path: 'ui/searchbar', loadChildren: './page/ui/searchbar/searchbar.module#SearchbarPageModule' },
   { path: 'ui/segment', loadChildren: './page/ui/segment/segment.module#SegmentPageModule' },
   { path: 'ui/select', loadChildren: './page/ui/select/select.module#SelectPageModule' },
+  { path: 'ui/slides', loadChildren: './page/ui/slides/slides.module#SlidesPageModule' },
+  { path: 'ui/bottomtabs', loadChildren: './page/ui/bottomtabs/bottomtabs.module#BottomtabsPageModule' },
+
+
 
 
 

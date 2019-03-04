@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+        <ion-back-button text='' defaultHref="/tabs/tab2"></ion-back-button>
+    </ion-buttons>
+    <ion-title>轮播图 Slides</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>轮播图 Slide</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+        <ion-slides pager="true">
+            <!-- [options]="slideOpts" -->
+             <ion-slide>
+               <h1>Slide 1</h1>
+             </ion-slide>
+             <ion-slide>
+               <h1>Slide 2</h1>
+             </ion-slide>
+             <ion-slide>
+               <h1>Slide 3</h1>
+             </ion-slide>
+           </ion-slides>
+    </ion-card-content>
+  </ion-card>
+  
+</ion-content>
