@@ -1,25 +1,93 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button text='' defaultHref="/tabs/tab2"></ion-back-button>
-    </ion-buttons>
-    <ion-title>底部Tabs组件 Tabs</ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text='' defaultHref="/tabs/tab2"></ion-back-button>
+        </ion-buttons>
+        <ion-title>底部Tabs组件 Tabs</ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-tabs>
-    <!-- Tab bar -->
-    <ion-tab-bar slot="bottom">
-      <ion-tab-button tab="account">
-        <ion-icon name="person"></ion-icon>
-      </ion-tab-button>
-      <ion-tab-button tab="contact">
-        <ion-icon name="call"></ion-icon>
-      </ion-tab-button>
-      <ion-tab-button tab="settings">
-        <ion-icon name="settings"></ion-icon>
-      </ion-tab-button>
-    </ion-tab-bar>
-  </ion-tabs>
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>ion-tab-bar</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-tabs>
+                <!-- Tab bar -->
+                <ion-tab-bar slot="bottom">
+                    <ion-tab-button tab="account">
+                        <ion-icon name="person"></ion-icon>
+                    </ion-tab-button>
+                    <ion-tab-button tab="contact">
+                        <ion-icon name="call"></ion-icon>
+                    </ion-tab-button>
+                    <ion-tab-button tab="settings">
+                        <ion-icon name="settings"></ion-icon>
+                    </ion-tab-button>
+                </ion-tab-bar>
+            </ion-tabs>
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>ion-tab-button</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-tabs>
+
+                <ion-tab-bar slot="bottom">
+                    <ion-tab-button tab="schedule">
+                        <ion-icon name="calendar"></ion-icon>
+                        <ion-label>Schedule</ion-label>
+                    </ion-tab-button>
+
+                    <ion-tab-button tab="speakers">
+                        <ion-icon name="contacts"></ion-icon>
+                        <ion-label>Speakers</ion-label>
+                    </ion-tab-button>
+
+                    <ion-tab-button tab="map">
+                        <ion-icon name="map"></ion-icon>
+                        <ion-label>Map</ion-label>
+                    </ion-tab-button>
+
+                    <ion-tab-button tab="about">
+                        <ion-icon name="information-circle"></ion-icon>
+                        <ion-label>About</ion-label>
+                    </ion-tab-button>
+                </ion-tab-bar>
+
+            </ion-tabs>
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>ion-tab</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-tabs>
+                <ion-tab tab="home">Home Content</ion-tab>
+                <ion-tab tab="settings">Settings Content</ion-tab>
+
+                <ion-tab-bar slot="bottom">
+
+                    <ion-tab-button tab="home">
+                        <ion-label>Home</ion-label>
+                        <ion-icon name="home"></ion-icon>
+                        <ion-badge>6</ion-badge>
+                    </ion-tab-button>
+
+                    <ion-tab-button tab="settings">
+                        <ion-label>Settings</ion-label>
+                        <ion-icon name="settings"></ion-icon>
+                    </ion-tab-button>
+
+                </ion-tab-bar>
+            </ion-tabs>
+        </ion-card-content>
+    </ion-card>
+
 </ion-content>
